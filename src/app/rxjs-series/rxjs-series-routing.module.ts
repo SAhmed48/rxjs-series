@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PromiseComponent } from './promise/promise.component';
+import { ObservableComponent } from './observable/observable.component';
 
 const routes: Routes = [
-  { path: '', component: PromiseComponent }
+  { path: 'promise', component: PromiseComponent },
+  { path: 'observable', component: ObservableComponent },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forChild(routes),
+  RouterModule.forChild(routes),
   ],
   exports: [RouterModule]
 })
