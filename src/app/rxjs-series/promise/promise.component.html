@@ -1,4 +1,9 @@
-<mat-toolbar>
-    <span>Rxjs Series</span>
-    <span class="example-spacer"></span>
-</mat-toolbar>
+<div style='padding: 20px;'>
+    <p>Click button and Activate Promise</p>
+    <button mat-fab [disabled]='btnDisable' color="primary" (click)='enableBtn()'>
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <br>
+    <br>
+    <span>The state of Button is: {{btnDisable}}</span>
+</div>
