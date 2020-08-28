@@ -8,9 +8,10 @@ import { SharedModuleModule } from '../shared-module/shared-module.module';
 import { ObservableComponent } from './observable/observable.component';
 import { ListObsrvbleComponent } from './observable/list-obsrvble/list-obsrvble.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
+import { IntervalComponent } from './observable/interval/interval.component';
 
 @NgModule({
-  declarations: [PromiseComponent, ObservableComponent, ListObsrvbleComponent, FromEventComponent],
+  declarations: [PromiseComponent, ObservableComponent, ListObsrvbleComponent, FromEventComponent, IntervalComponent],
   imports: [
   CommonModule,
     MatToolbarModule,
