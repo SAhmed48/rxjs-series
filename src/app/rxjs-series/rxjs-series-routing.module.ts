@@ -5,6 +5,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { ListObsrvbleComponent } from './observable/list-obsrvble/list-obsrvble.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { IntervalComponent } from './observable/interval/interval.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
     children: [
       { path: '', component: ListObsrvbleComponent },
       { path: 'from-event', component: FromEventComponent },
-      { path: 'interval', component: IntervalComponent }
+      { path: 'interval', component: IntervalComponent },
+      { path: 'of-from', component: OfFromComponent },
     ]
   },
 ];
