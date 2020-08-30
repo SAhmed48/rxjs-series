@@ -1,1 +1,36 @@
-<p>retry works!</p>
+<div class="row p-3">
+    <div class="col-4">
+        <strong>Definition:</strong>
+        <hr>
+        <strong>Example - 01 (Retry) </strong>
+        <hr>
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">Retry: Fetch User details</div>
+                <div class="card-body">
+                    <ul *ngFor='let user of users'>
+                        <li>
+                            <p>
+                                <span>
+                                    <strong>Name:</strong> {{user.name}}</span>
+                                <br>
+                                <span>
+                                    <strong>Email:</strong> {{user.email}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button (click)='fetchDetails()' class="btn btn-primary">
+                        <span *ngIf='fetching' class='spinner-border spinner-border-sm'></span>
+                        {{ fetching ? 'Fetching...' : 'Fetch Details'}}
+                    </button>
+                    <p>Status: <strong>{{status}}</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

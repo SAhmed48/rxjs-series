@@ -23,6 +23,7 @@ import { TakeComponent } from './observable/take/take.component';
 import { TapComponent } from './observable/tap/tap.component';
 import { SwitchMapComponent } from './observable/switch-map/switch-map.component';
 import { SwitchMapSearchComponent } from './observable/switch-map-search/switch-map-search.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+           HttpClientModule],
   exports:[RouterModule]
 })
 export class RxjsSeriesRoutingModule { }
