@@ -1,1 +1,60 @@
-<p>take works!</p>
+<div class="row p-3">
+    <div class="col-4">
+        <hr>
+        <strong>Example - 01 (Take)</strong>
+        <hr>
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">Take: : Get first 4 elements from array</div>
+                <div class="card-body">
+                    <ul *ngFor='let item of takeDataList'>
+                        <li>
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <hr>
+        <strong>Example - 02 (TakeLast)</strong>
+        <hr>
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">TakeLast: : Get last 4 elements from array</div>
+                <div class="card-body">
+                    <ul *ngFor='let item of takeLastList'>
+                        <li>
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+        <hr>
+        <strong>Example - 03 (TakeUntil)</strong>
+        <hr>
+
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">TakeUntil: Stop Emitting Value after 5s </div>
+                <div class="card-body">
+                    <ul *ngFor='let item of takeUntilList'>
+                        <li>
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
