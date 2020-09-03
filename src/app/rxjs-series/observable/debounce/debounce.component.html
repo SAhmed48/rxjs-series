@@ -1,1 +1,66 @@
-<p>debounce works!</p>
+<div class="row p-3">
+    <div class="col-6">
+        <strong>Definition:</strong>
+        <hr>
+        <strong>Example - 01 (DebounceTime) </strong>
+        <br>
+        <strong>Explanation:</strong>
+        <br>
+        <span>Mostly used in implementing the search
+            functionality. Send request to backend when user enter
+            search text in the inputbox. debounceTime will add few seconds delay to send request to server
+            with complete user written text instead of sending each character.
+        </span>
+        <hr>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">DebounceTime</div>
+                <div class="card-body">
+                    <div class="col">
+                        <input #debounceInput type="text" class="form-control" placeholder="Search...">
+                      </div>
+                </div>
+                <div class="card-footer">
+                    <p><strong>Search Data:</strong>
+                        <span class="text-success">{{searchData}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="col-6">
+        <strong>Definition:</strong>
+        <hr>
+        <strong>Example - 02 (DistinctUntilChanged) </strong>
+        <br>
+        <strong>Explanation:</strong>
+        <br>
+        <span>Send search request to backend server only 
+            when new search parameter is written by user.
+            e.g If you enter 'angular' in search box it sends request to server.
+            then again you write 'angular rxjs' and then suddenly remove rxjs then it
+            does not send request to server.
+        </span>
+        <hr>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">Debounce</div>
+                <div class="card-body">
+                    <div class="col">
+                        <input #distinctUntilInput type="text" class="form-control" placeholder="Search...">
+                      </div>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        <strong>Search Data:</strong>
+                        <span class="text-success">{{searchData1}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
